@@ -5,7 +5,7 @@ const Projects = () => {
   const projects = [
     {
       title: 'Cyberpunk Portfolio',
-      description: 'A futuristic portfolio website built with React and Tailwind CSS, featuring neon aesthetics and terminal-style navigation.',
+      description: 'A futuristic portfolio website built with React and Tailwind CSS, featuring neon aesthetics and smooth animations.',
       tech: ['React', 'TypeScript', 'Tailwind CSS', 'Vite'],
       githubUrl: '#',
       liveUrl: '#',
@@ -55,12 +55,12 @@ const Projects = () => {
     <div className="min-h-screen bg-cyber-black bg-cyber-grid">
       <div className="container mx-auto px-4 py-8">
         <div className="mb-8">
-          <h1 className="font-orbitron text-4xl glow-neon-blue mb-4">/projects</h1>
+          <h1 className="font-orbitron text-4xl glow-neon-blue mb-4">Projects</h1>
           <p className="font-space text-gray-400 text-lg">
             Explore my latest projects and contributions to the digital realm
           </p>
           <div className="mt-2 font-space text-sm text-neon-red">
-            {projects.length} repositories found
+            {projects.length} projects found
           </div>
         </div>
 
