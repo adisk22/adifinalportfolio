@@ -1,11 +1,11 @@
 
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { Terminal, Folder, ArrowRight } from 'lucide-react';
+import { ArrowRight, Code, FileText, User, Briefcase } from 'lucide-react';
 
 const Home = () => {
   const [typedText, setTypedText] = useState('');
-  const welcomeText = 'Welcome to the Portfolio Terminal...';
+  const welcomeText = 'Welcome to my digital portfolio...';
 
   useEffect(() => {
     let index = 0;
@@ -21,44 +21,39 @@ const Home = () => {
     return () => clearInterval(timer);
   }, []);
 
-  const directories = [
-    { name: 'projects/', path: '/projects', desc: 'View my latest work and code repositories' },
-    { name: 'resume/', path: '/resume', desc: 'Download and view my professional resume' },
-    { name: 'about-me/', path: '/about-me', desc: 'Learn more about my background and skills' },
-    { name: 'work-experience/', path: '/work-experience', desc: 'Explore my professional journey' },
+  const sections = [
+    { name: 'Projects', path: '/projects', desc: 'View my latest work and code repositories', icon: Code },
+    { name: 'Resume', path: '/resume', desc: 'Download and view my professional resume', icon: FileText },
+    { name: 'About Me', path: '/about-me', desc: 'Learn more about my background and skills', icon: User },
+    { name: 'Experience', path: '/work-experience', desc: 'Explore my professional journey', icon: Briefcase },
   ];
 
   return (
     <div className="min-h-screen bg-cyber-black bg-cyber-grid">
       <div className="container mx-auto px-4 py-12">
-        {/* Terminal Header */}
+        {/* Header */}
         <div className="mb-12 text-center">
-          <div className="inline-flex items-center space-x-3 mb-6">
-            <Terminal className="w-8 h-8 text-neon-blue animate-neon-pulse" />
-            <h1 className="font-orbitron text-4xl md:text-6xl glow-neon-blue">
-              PORTFOLIO
-            </h1>
-            <Terminal className="w-8 h-8 text-neon-red animate-neon-pulse" />
-          </div>
+          <h1 className="font-orbitron text-4xl md:text-6xl glow-neon-blue mb-6">
+            PORTFOLIO
+          </h1>
           
           <div className="font-space text-lg md:text-xl mb-8">
-            <span className="text-neon-blue">root@portfolio:~$ </span>
             <span className="text-white">{typedText}</span>
             <span className="animate-blink text-neon-blue">|</span>
           </div>
         </div>
 
-        {/* Directory Listing */}
+        {/* Navigation Cards */}
         <div className="max-w-4xl mx-auto">
           <div className="mb-6">
-            <h2 className="font-orbitron text-2xl glow-neon-red mb-2">Directory Listing:</h2>
+            <h2 className="font-orbitron text-2xl glow-neon-red mb-2">Explore:</h2>
             <div className="font-space text-sm text-gray-400">
-              Total 4 directories available for navigation
+              Navigate through my digital presence
             </div>
           </div>
 
           <div className="space-y-4">
-            {directories.map(({ name, path, desc }) => (
+            {sections.map(({ name, path, desc, icon: Icon }) => (
               <Link
                 key={path}
                 to={path}
@@ -67,7 +62,7 @@ const Home = () => {
               >
                 <div className="flex items-center justify-between">
                   <div className="flex items-center space-x-4">
-                    <Folder className="w-6 h-6 text-neon-blue group-hover:text-neon-red transition-colors duration-300" />
+                    <Icon className="w-6 h-6 text-neon-blue group-hover:text-neon-red transition-colors duration-300" />
                     <div>
                       <div className="font-orbitron text-xl text-neon-blue group-hover:text-neon-red transition-colors duration-300">
                         {name}
@@ -88,7 +83,7 @@ const Home = () => {
         <div className="mt-16 text-center">
           <div className="inline-block p-4 border border-gray-800 rounded-lg bg-cyber-dark">
             <div className="font-space text-xs text-gray-500 space-y-1">
-              <div>System: Portfolio Terminal v2.1</div>
+              <div>Portfolio v2.1</div>
               <div>Status: Online and Ready</div>
               <div>Last Updated: {new Date().toLocaleDateString()}</div>
             </div>

@@ -1,11 +1,7 @@
 
 import { useState, useEffect } from 'react';
 
-interface TerminalHeaderProps {
-  currentPath: string;
-}
-
-const TerminalHeader = ({ currentPath }: TerminalHeaderProps) => {
+const TerminalHeader = () => {
   const [currentTime, setCurrentTime] = useState(new Date());
 
   useEffect(() => {
@@ -23,16 +19,11 @@ const TerminalHeader = ({ currentPath }: TerminalHeaderProps) => {
           <span className="text-neon-red">●</span>
           <span className="text-yellow-400">●</span>
           <span className="text-green-400">●</span>
-          <span className="glow-neon-blue ml-4">PORTFOLIO_TERMINAL_v2.1</span>
+          <span className="glow-neon-blue ml-4">PORTFOLIO v2.1</span>
         </div>
         <div className="glow-neon-red">
           {currentTime.toLocaleTimeString()}
         </div>
-      </div>
-      <div className="mt-2 font-orbitron">
-        <span className="text-neon-blue">user@portfolio:~</span>
-        <span className="text-white">{currentPath}</span>
-        <span className="animate-blink text-neon-blue">_</span>
       </div>
     </div>
   );
