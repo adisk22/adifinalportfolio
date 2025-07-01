@@ -55,17 +55,7 @@ const ProjectCard = ({ title, description, tech, githubUrl, liveUrl, image }: Pr
             <span className="font-space text-sm">Code</span>
           </a>
         )}
-        {liveUrl && (
-          <a
-            href={liveUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex items-center space-x-2 text-neon-blue hover:text-neon-red transition-colors duration-300"
-          >
-            <ExternalLink className="w-4 h-4" />
-            <span className="font-space text-sm">Live Demo</span>
-          </a>
-        )}
+        
       </div>
     </div>
   );

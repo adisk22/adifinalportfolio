@@ -1,85 +1,89 @@
 
-import { Calendar, MapPin, ExternalLink, ArrowRight } from 'lucide-react';
+import { Calendar, MapPin, ExternalLink, ArrowRight, Download } from 'lucide-react';
 
 const WorkExperience = () => {
+
+  const handleDownload = () => {
+    const resumeUrl = '/adiwebresume.pdf'; // Make sure this file exists in your public folder
+    const link = document.createElement('a');
+    link.href = resumeUrl;
+    link.download = 'Adi_Karkera_Resume.pdf'; // Customize filename as needed
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
   const experiences = [
     {
       id: 1,
-      role: 'Senior Cybersecurity Engineer',
+      role: 'Cybersecurity Intern',
       company: 'CyberCorp Industries',
-      location: 'Neo Tokyo, Cyber District',
-      period: '2023 - Present',
-      type: 'Full-time',
-      description: 'Leading security architecture for distributed systems and implementing zero-trust networks.',
+      location: 'Toronto, ON',
+      period: 'May 2025 - Present',
+      type: 'Internship',
+      description: 'End User Services Team!',
       achievements: [
-        'Reduced security incidents by 95% through proactive threat hunting',
-        'Implemented automated incident response system',
-        'Led team of 8 security engineers',
-        'Designed security framework adopted company-wide'
+        'Redesigned and enhanced an internal risk dashboard using SQL and Tableau to improve risk visibility and support data-driven decision-making across the security team',
+        'Developed scripts and automated tools to monitor application security, streamline compliance checks, and remadiate vulnerabilities across a wide application portfolio',
+        'Collaborated with cross-functional teams to identify, document and remediate security risks in accordance with federal and industry security standards',
       ],
-      technologies: ['Python', 'Kubernetes', 'AWS', 'Terraform', 'SIEM']
+      technologies: ['Python', 'SQL', 'Azure', 'Tableau', 'SIEM']
     },
     {
       id: 2,
-      role: 'Full Stack Developer',
-      company: 'TechNova Solutions',
-      location: 'Silicon Valley, CA',
-      period: '2021 - 2023',
-      type: 'Full-time',
-      description: 'Developed scalable web applications and implemented microservices architecture.',
+      role: 'Cybersecurity Intern',
+      company: 'Hatch',
+      location: 'Mississauga, ON',
+      period: 'Jan 2025 - Apr 2025',
+      type: 'Internship',
+      description: 'Blue team',
       achievements: [
-        'Built payment processing system handling $2M+ monthly',
-        'Optimized application performance by 60%',
-        'Mentored 5 junior developers',
-        'Architected migration to cloud infrastructure'
+        'Developed a Python-based automation tool to streamline the deployment of safety systems across global Hatch offices by automating configuration processes, thereby reducing implementation time by 80%',
+        'Strengthened internal system defenses by identifying and resolving vulnerabilities through penetration testing and automated security tools, reducing potential attack surfaces by 12%',
+        'Monitored and analyzed security logs using SIEM tools to detect suspicious activity, resulting in the early identification and mitigation of a critical vulnerability',
       ],
-      technologies: ['React', 'Node.js', 'Docker', 'PostgreSQL', 'Redis']
+      technologies: ['Python', 'SQL', 'Angular', 'SIEM', 'Azure']
     },
     {
       id: 3,
-      role: 'Security Analyst',
-      company: 'SecureNet Dynamics',
-      location: 'Austin, TX',
-      period: '2019 - 2021',
-      type: 'Full-time',
-      description: 'Conducted security assessments and vulnerability research for enterprise clients.',
+      role: 'Mobile App Developer',
+      company: 'OurWaveHub',
+      location: 'Toronto, ON',
+      period: 'June 2022 - Aug 2022',
+      type: 'Internship',
+      description: 'Building iOS Apps',
       achievements: [
-        'Discovered 12 critical vulnerabilities in major software',
-        'Developed custom security testing tools',
-        'Conducted 50+ penetration tests',
-        'Published 3 security research papers'
+        'Architected a mobiel application framework focused on health issue diagnosis using Swift and Xcode',
+        'Led project planning and scheduling, coordinating tasks and timelines through workshops and team projects',
+        'Risk management and problem-solving during development, ensuring successful delivery of app features',
       ],
-      technologies: ['Burp Suite', 'Metasploit', 'Python', 'Nmap', 'Wireshark']
-    },
-    {
-      id: 4,
-      role: 'Junior Developer',
-      company: 'StartupX',
-      location: 'Remote',
-      period: '2018 - 2019',
-      type: 'Contract',
-      description: 'Built MVP products for various startups and learned modern development practices.',
-      achievements: [
-        'Delivered 8 MVP products on time and budget',
-        'Gained expertise in rapid prototyping',
-        'Worked with international remote team',
-        'Contributed to open-source projects'
-      ],
-      technologies: ['JavaScript', 'Vue.js', 'Firebase', 'MongoDB', 'Git']
+      technologies: ['Swift','Xcode']
     }
   ];
 
   return (
     <div className="min-h-screen bg-cyber-black bg-cyber-grid">
       <div className="container mx-auto px-4 py-8">
-        <div className="mb-8">
+        <div className="mb-8 flex items-center justify-between">
+          <div>
           <h1 className="font-orbitron text-4xl glow-neon-blue mb-4">/work-experience</h1>
           <p className="font-space text-gray-400 text-lg">
-            Professional journey through the digital frontier
+            My Professional Journey
           </p>
+          
           <div className="mt-2 font-space text-sm text-neon-red">
-            {experiences.length} positions • {new Date().getFullYear() - 2018} years experience
+            {experiences.length} positions • {new Date().getFullYear() - 2021} years experience
           </div>
+          </div>
+          <button
+            onClick={handleDownload}
+            className="flex items-center space-x-2 px-6 py-3 border-glow-blue rounded-lg
+                     hover:border-glow-red hover:text-neon-red transition-all duration-300
+                     font-space text-neon-blue">
+          
+            <Download className="w-5 h-5" />
+            <span>resume.pdf</span>
+          </button>
         </div>
 
         <div className="max-w-4xl mx-auto">
@@ -158,26 +162,7 @@ const WorkExperience = () => {
             ))}
           </div>
 
-          {/* Summary */}
-          <div className="mt-12 bg-cyber-dark border-glow-red rounded-lg p-6">
-            <h3 className="font-orbitron text-xl glow-neon-red mb-4">Experience Summary</h3>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 font-space text-sm">
-              <div className="text-center">
-                <div className="text-2xl glow-neon-blue font-orbitron mb-1">
-                  {new Date().getFullYear() - 2018}+
-                </div>
-                <div className="text-gray-400">Years Experience</div>
-              </div>
-              <div className="text-center">
-                <div className="text-2xl glow-neon-blue font-orbitron mb-1">50+</div>
-                <div className="text-gray-400">Projects Completed</div>
-              </div>
-              <div className="text-center">
-                <div className="text-2xl glow-neon-blue font-orbitron mb-1">15+</div>
-                <div className="text-gray-400">Technologies Mastered</div>
-              </div>
-            </div>
-          </div>
+          
         </div>
       </div>
     </div>
