@@ -13,17 +13,15 @@ const Resume = () => {
         {/* Header */}
         <div className="mb-8 flex items-center justify-between">
           <div>
-            <h1 className="font-orbitron text-4xl glow-neon-blue mb-4">/resume</h1>
-            <p className="font-space text-gray-400 text-lg">
-              Digital resume - Terminal format
-            </p>
+            <h1 className="font-orbitron text-4xl glow-neon-blue mb-4">resume</h1>
+            
           </div>
           <button
             onClick={handleDownload}
             className="flex items-center space-x-2 px-6 py-3 border-glow-blue rounded-lg
                      hover:border-glow-red hover:text-neon-red transition-all duration-300
-                     font-space text-neon-blue"
-          >
+                     font-space text-neon-blue">
+          
             <Download className="w-5 h-5" />
             <span>download.pdf</span>
           </button>

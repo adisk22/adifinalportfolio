@@ -8,7 +8,7 @@ const Navigation = () => {
   const navItems = [
     { path: '/', label: 'Home', icon: Folder },
     { path: '/projects', label: 'Projects', icon: Code },
-    { path: '/resume', label: 'Resume', icon: FileText },
+    
     { path: '/about-me', label: 'About', icon: User },
     { path: '/work-experience', label: 'Experience', icon: Briefcase },
   ];

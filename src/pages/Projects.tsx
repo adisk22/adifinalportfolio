@@ -4,50 +4,27 @@ import ProjectCard from '../components/ProjectCard';
 const Projects = () => {
   const projects = [
     {
-      title: 'Cyberpunk Portfolio',
-      description: 'A futuristic portfolio website built with React and Tailwind CSS, featuring neon aesthetics and smooth animations.',
-      tech: ['React', 'TypeScript', 'Tailwind CSS', 'Vite'],
-      githubUrl: '#',
+      title: 'FootyStock',
+      description: 'An interactive web application simulating a real-time stock market for 500+ soccer players',
+      tech: ['Next.js', 'Typescript', 'PostgreSQL'],
+      githubUrl: 'https://github.com/adisk22/footystock',
       liveUrl: '#',
-      image: 'https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'
+      image: '/footystock.png'
     },
     {
-      title: 'Neural Network Visualizer',
-      description: 'Interactive web application for visualizing neural network architectures and training processes in real-time.',
-      tech: ['JavaScript', 'D3.js', 'Node.js', 'WebGL'],
-      githubUrl: '#',
+      title: 'Pokedex',
+      description: 'A Pokemon identifier using an AI model to classify and retrieve Pokemon information from images',
+      tech: ['Python', 'TensorFlow,', 'OpenCV', 'Pandas', 'Numpy'],
+      githubUrl: 'https://github.com/adisk22/Pokedex',
       liveUrl: '#',
-      image: 'https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'
+      image: 'pikachumeme.jpg'
     },
     {
-      title: 'Blockchain Explorer',
-      description: 'A comprehensive blockchain explorer with real-time transaction monitoring and advanced analytics dashboard.',
-      tech: ['Vue.js', 'Web3.js', 'Express', 'MongoDB'],
+      title: 'AIStudio',
+      description: 'An AI based web application to support university students with everyday and school-related tasks',
+      tech: ['TypeScript', 'Next.js', 'PostgreSQL'],
       githubUrl: '#',
       image: 'https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'
-    },
-    {
-      title: 'AI Code Assistant',
-      description: 'VS Code extension that provides intelligent code suggestions and automated refactoring using machine learning.',
-      tech: ['TypeScript', 'Python', 'TensorFlow', 'VS Code API'],
-      githubUrl: '#',
-      liveUrl: '#',
-      image: 'https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'
-    },
-    {
-      title: 'Quantum Simulator',
-      description: 'Web-based quantum computing simulator with visual circuit builder and quantum algorithm implementations.',
-      tech: ['React', 'WebAssembly', 'Rust', 'Three.js'],
-      githubUrl: '#',
-      image: 'https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'
-    },
-    {
-      title: 'Distributed Chat System',
-      description: 'Real-time messaging platform with end-to-end encryption and decentralized architecture.',
-      tech: ['Socket.io', 'Redis', 'Docker', 'Kubernetes'],
-      githubUrl: '#',
-      liveUrl: '#',
-      image: 'https://images.unsplash.com/photo-1605810230434-7631ac76ec81?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'
     }
   ];
 
@@ -75,8 +52,9 @@ const Projects = () => {
             <p className="font-space text-sm text-gray-400">
               More projects available on{' '}
               <a 
-                href="#" 
+                href="https://github.com/adisk22" 
                 className="text-neon-blue hover:text-neon-red transition-colors duration-300"
+                target="_blank"
               >
                 GitHub
               </a>

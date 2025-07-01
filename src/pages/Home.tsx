@@ -5,7 +5,7 @@ import { ArrowRight, Code, FileText, User, Briefcase } from 'lucide-react';
 
 const Home = () => {
   const [typedText, setTypedText] = useState('');
-  const welcomeText = 'Welcome to my digital portfolio...';
+  const welcomeText = "This is Adi's Personal Portfolio...";
 
   useEffect(() => {
     let index = 0;
@@ -23,7 +23,6 @@ const Home = () => {
 
   const sections = [
     { name: 'Projects', path: '/projects', desc: 'View my latest work and code repositories', icon: Code },
-    { name: 'Resume', path: '/resume', desc: 'Download and view my professional resume', icon: FileText },
     { name: 'About Me', path: '/about-me', desc: 'Learn more about my background and skills', icon: User },
     { name: 'Experience', path: '/work-experience', desc: 'Explore my professional journey', icon: Briefcase },
   ];
@@ -47,9 +46,7 @@ const Home = () => {
         <div className="max-w-4xl mx-auto">
           <div className="mb-6">
             <h2 className="font-orbitron text-2xl glow-neon-red mb-2">Explore:</h2>
-            <div className="font-space text-sm text-gray-400">
-              Navigate through my digital presence
-            </div>
+
           </div>
 
           <div className="space-y-4">
@@ -83,7 +80,6 @@ const Home = () => {
         <div className="mt-16 text-center">
           <div className="inline-block p-4 border border-gray-800 rounded-lg bg-cyber-dark">
             <div className="font-space text-xs text-gray-500 space-y-1">
-              <div>Portfolio v2.1</div>
               <div>Status: Online and Ready</div>
               <div>Last Updated: {new Date().toLocaleDateString()}</div>
             </div>
