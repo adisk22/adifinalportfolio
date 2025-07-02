@@ -16,7 +16,7 @@ const Navigation = () => {
   return (
     <nav className="bg-cyber-dark border-b border-glow-blue">
       <div className="container mx-auto px-4">
-        <div className="flex space-x-1 overflow-x-auto">
+        <div className="flex space-x-1 overflow-x-auto justify-center">
           {navItems.map(({ path, label, icon: Icon }) => {
             const isActive = location.pathname === path;
             return (
