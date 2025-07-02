@@ -14,7 +14,7 @@ const Projects = () => {
     {
       title: 'Pokedex',
       description: 'A Pokemon identifier using an AI model to classify and retrieve Pokemon information from images',
-      tech: ['Python', 'TensorFlow,', 'OpenCV', 'Pandas', 'Numpy'],
+      tech: ['Python', 'TensorFlow', 'OpenCV', 'Pandas', 'Numpy'],
       githubUrl: 'https://github.com/adisk22/Pokedex',
       liveUrl: '#',
       image: 'pikachumeme.jpg'

@@ -19,7 +19,7 @@ const TerminalHeader = () => {
           <span className="text-neon-red">●</span>
           <span className="text-yellow-400">●</span>
           <span className="text-green-400">●</span>
-          <span className="glow-neon-blue ml-4">PORTFOLIO v2.1</span>
+          <span className="glow-neon-blue ml-4">PORTFOLIO</span>
         </div>
         <div className="glow-neon-red">
           {currentTime.toLocaleTimeString()}
