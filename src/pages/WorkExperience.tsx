@@ -66,7 +66,7 @@ const WorkExperience = () => {
       <div className="container mx-auto px-4 py-8">
         <div className="mb-8 flex items-center justify-between">
           <div>
-          <h1 className="font-orbitron text-4xl glow-neon-blue mb-4">/work-experience</h1>
+          <h1 className="font-orbitron text-4xl glow-neon-blue mb-4">Work Experience</h1>
           <p className="font-space text-gray-400 text-lg">
             My Professional Journey
           </p>
