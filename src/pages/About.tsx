@@ -13,7 +13,7 @@ const About = () => {
     <div className="min-h-screen bg-cyber-black bg-cyber-grid">
       <div className="container mx-auto px-4 py-8">
         <div className="mb-8">
-          <h1 className="font-orbitron text-4xl glow-neon-blue mb-4">/about-me</h1>
+          <h1 className="font-orbitron text-4xl glow-neon-blue mb-4">About Me</h1>
           <p className="font-space text-gray-400 text-lg">
             Fundamentals
           </p>
