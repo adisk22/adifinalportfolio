@@ -17,7 +17,7 @@ const WorkExperience = () => {
     {
       id: 1,
       role: 'Cybersecurity Intern',
-      company: 'CyberCorp Industries',
+      company: 'Royal Bank of Canada',
       location: 'Toronto, ON',
       period: 'May 2025 - Present',
       type: 'Internship',
