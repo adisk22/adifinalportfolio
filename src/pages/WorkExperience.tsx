@@ -53,7 +53,7 @@ const WorkExperience = () => {
       type: 'Internship',
       description: 'Building iOS Apps',
       achievements: [
-        'Architected a mobiel application framework focused on health issue diagnosis using Swift and Xcode',
+        'Architected a mobile application framework focused on health issue diagnosis using Swift and Xcode',
         'Led project planning and scheduling, coordinating tasks and timelines through workshops and team projects',
         'Risk management and problem-solving during development, ensuring successful delivery of app features',
       ],
