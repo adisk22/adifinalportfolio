@@ -77,10 +77,7 @@ const About = () => {
                 <span className="text-neon-blue">@adisk22</span>
                 </a>
               </div>
-              <div className="flex justify-between">
-                <span className="text-gray-400">Status:</span>
-                <span className="text-green-400 animate-neon-pulse">Online</span>
-              </div>
+              
             </div>
           </div>
         </div>
