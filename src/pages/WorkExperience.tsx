@@ -4,7 +4,7 @@ import { Calendar, MapPin, ExternalLink, ArrowRight, Download } from 'lucide-rea
 const WorkExperience = () => {
 
   const handleDownload = () => {
-    const resumeUrl = '/adiwebresume.pdf'; // Make sure this file exists in your public folder
+    const resumeUrl = '/adiwebresume1.pdf'; // Make sure this file exists in your public folder
     const link = document.createElement('a');
     link.href = resumeUrl;
     link.download = 'Adi_Karkera_Resume.pdf'; // Customize filename as needed
@@ -31,15 +31,15 @@ const WorkExperience = () => {
     },
     {
       id: 2,
-      role: 'Cybersecurity Intern',
+      role: 'Security Engineer Intern',
       company: 'Hatch',
       location: 'Mississauga, ON',
       period: 'Jan 2025 - Apr 2025',
       type: 'Internship',
       description: 'Blue team',
       achievements: [
-        'Developed a Python-based automation tool to streamline the deployment of safety systems across global Hatch offices by automating configuration processes, thereby reducing implementation time by 80%',
-        'Strengthened internal system defenses by identifying and resolving vulnerabilities through penetration testing and automated security tools, reducing potential attack surfaces by 12%',
+        'Engineered a Python-based automation framework to standardize and accelerate the deployment and configuration of safety infrastructure across global Hatch environments, thereby reducing implementation times by 80%',
+        'Conducted internal penetration tests and elveraged automated vulnerability scanners, to identify misconfigurations and CVEs, leading to a 12 reduction in attack surface exposure',
         'Monitored and analyzed security logs using SIEM tools to detect suspicious activity, resulting in the early identification and mitigation of a critical vulnerability',
       ],
       technologies: ['Python', 'SQL', 'Angular', 'SIEM', 'Azure']
