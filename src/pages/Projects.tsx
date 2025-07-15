@@ -34,10 +34,10 @@ const Projects = () => {
         <div className="mb-8">
           <h1 className="font-orbitron text-4xl glow-neon-blue mb-4">Projects</h1>
           <p className="font-space text-gray-400 text-lg">
-            Explore my latest projects and contributions to the digital realm
+            Explore my latest projects
           </p>
           <div className="mt-2 font-space text-sm text-neon-red">
-            {projects.length} projects found
+            {projects.length} projects
           </div>
         </div>
 

@@ -4,10 +4,10 @@ import { Calendar, MapPin, ExternalLink, ArrowRight, Download } from 'lucide-rea
 const WorkExperience = () => {
 
   const handleDownload = () => {
-    const resumeUrl = '/adiwebresume1.pdf'; // Make sure this file exists in your public folder
+    const resumeUrl = '/adijsres.pdf'; 
     const link = document.createElement('a');
     link.href = resumeUrl;
-    link.download = 'Adi_Karkera_Resume.pdf'; // Customize filename as needed
+    link.download = 'Adi_Karkera_Resume.pdf'; 
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
