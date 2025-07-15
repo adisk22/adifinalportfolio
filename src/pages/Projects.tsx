@@ -5,7 +5,7 @@ const Projects = () => {
   const projects = [
     {
       title: 'FootyStock',
-      description: 'An interactive web application simulating a real-time stock market for 500+ soccer players',
+      description: 'An interactive web application simulating a real-time stock market for 500+ soccer players. Received interest from several major sports companies',
       tech: ['Next.js', 'Typescript', 'PostgreSQL'],
       githubUrl: 'https://github.com/adisk22/footystock',
       liveUrl: '#',
@@ -24,7 +24,7 @@ const Projects = () => {
       description: 'An AI based web application to support university students with everyday and school-related tasks',
       tech: ['TypeScript', 'Next.js', 'PostgreSQL'],
       githubUrl: '#',
-      image: 'https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'
+      image: 'aistudi.png'
     }
   ];
 
