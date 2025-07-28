@@ -11,6 +11,7 @@ const Navigation = () => {
     
     { path: '/about-me', label: 'About', icon: User },
     { path: '/work-experience', label: 'Experience', icon: Briefcase },
+    { path: '/blackboard', label: 'Blackboard', icon: Code }
   ];
 
   return (

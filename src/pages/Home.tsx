@@ -1,7 +1,7 @@
 
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { ArrowRight, Code, FileText, User, Briefcase } from 'lucide-react';
+import { ArrowRight, Code, FileText, User, Briefcase, Pen } from 'lucide-react';
 
 const Home = () => {
   const [typedText, setTypedText] = useState('');
@@ -25,6 +25,7 @@ const Home = () => {
     { name: 'Projects', path: '/projects', desc: 'View my latest work and code repositories', icon: Code },
     { name: 'About Me', path: '/about-me', desc: 'Learn more about my background and skills', icon: User },
     { name: 'Experience', path: '/work-experience', desc: 'Explore my professional journey', icon: Briefcase },
+    { name: 'Blackboard', path: '/Blackboard', desc: 'Draw on a blackboard I made', icon: Pen }
   ];
 
   return (
@@ -80,8 +81,7 @@ const Home = () => {
         <div className="mt-16 text-center">
           <div className="inline-block p-4 border border-gray-800 rounded-lg bg-cyber-dark">
             <div className="font-space text-xs text-gray-500 space-y-1">
-              <div>Status: Online and Ready</div>
-              <div>Last Updated: {new Date().toLocaleDateString()}</div>
+              <div>Last Updated: 7/28/2025</div>
             </div>
           </div>
         </div>
