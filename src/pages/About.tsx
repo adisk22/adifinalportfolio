@@ -35,7 +35,7 @@ const About = () => {
               </p>
               <p>
                 Outside of work and school I enjoy going to the gym and playing sports like Soccer and 
-                Volleyball. I've also recently started doing Zetamac, with my highest score being 79.
+                Volleyball. I've also recently started doing Zetamac, with my highest score being 90.
               </p>
             </div>
           </div>
