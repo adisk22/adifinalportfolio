@@ -98,7 +98,7 @@ const Blackboard = () => {
         <div className="mb-6">
           <h1 className="font-orbitron text-4xl glow-neon-blue mb-4">Adis Blackboard</h1>
           <p className="font-space text-gray-400">
-            Have fun
+            I don't know, have fun!
           </p>
         </div>
 
