@@ -50,7 +50,6 @@ const About = () => {
                 <div className="text-neon-blue">• AI/ML Security</div>
                 <div className="text-neon-blue">• System Design</div>
                 <div className="text-neon-blue">• Algorithm Development</div>
-                <div className="text-neon-blue">• Bijections (MATH239 😊)</div>
               </div>
               
             </div>
