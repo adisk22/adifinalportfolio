@@ -14,6 +14,7 @@ import About from "./pages/About";
 import WorkExperience from "./pages/WorkExperience";
 import Blackboard from "./pages/Blackboard";
 import NotFound from "./pages/NotFound";
+import { Analytics } from "@vercel/analytics/next"
 
 const queryClient = new QueryClient();
 
