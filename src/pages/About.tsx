@@ -9,6 +9,16 @@ const About = () => {
     { name: 'Performance Optimization', level: 88, color: 'neon-red', icon: Zap },
   ];
 
+  // Array of random images that will change on each refresh
+  const randomImages = [
+  
+    '/adi02.png'
+
+  ];
+
+  // Get a random image from the array
+  const randomImage = randomImages[Math.floor(Math.random() * randomImages.length)];
+
   return (
     <div className="min-h-screen bg-cyber-black bg-cyber-grid">
       <div className="container mx-auto px-4 py-8">
@@ -20,23 +30,42 @@ const About = () => {
         </div>
 
         <div className="max-w-4xl mx-auto grid grid-cols-1 lg:grid-cols-1 gap-8">
-          {/* Profile */}
-          <div className="bg-cyber-dark border-glow-blue rounded-lg p-6">
-            <h2 className="font-orbitron text-2xl glow-neon-red mb-4">Profile</h2>
-            <div className="space-y-4 font-space text-gray-300">
-              <p>
-                Hi. I'm a third-year student at the University of Waterloo studying Stats and Comp. Math.
-              </p>
-              <p>
-                I have a lot of previous experience in Cybersecurity, 
-                specifically work in Compliance, Risk Management, and Network Device Security.
-                However, I'm still trying to figure out what field of tech I enjoy most, so 
-                I'm open to working in a variety of positions, including AI, Development, and Research roles.
-              </p>
-              <p>
-                Outside of work and school I enjoy going to the gym and playing sports like Soccer, Volleyball, and Basketball. I've also recently started doing Zetamac, with my highest score being 90.
-              </p>
+          {/* Profile and Photo Section */}
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+            {/* Profile */}
+            <div className="bg-cyber-dark border-glow-blue rounded-lg p-6">
+              <h2 className="font-orbitron text-2xl glow-neon-red mb-4">Profile</h2>
+              <div className="space-y-4 font-space text-gray-300">
+                <p>
+                  Hi. I'm a third-year student at the University of Waterloo studying Stats and Comp. Math.
+                </p>
+                <p>
+                  I have a lot of previous experience in Cybersecurity, 
+                  specifically work in Compliance, Risk Management, and Network Device Security.
+                  However, I'm still trying to figure out what field of tech I enjoy most, so 
+                  I'm open to working in a variety of positions, including AI, Development, and Research roles.
+                </p>
+                <p>
+                  Outside of work and school I enjoy going to the gym and playing sports like Soccer, Volleyball, and Basketball. I've also recently started doing Zetamac, with my highest score being 90.
+                </p>
+              </div>
             </div>
+
+                         {/* Photo */}
+             <div className="bg-cyber-dark border-glow-blue rounded-lg p-6">
+               <h2 className="font-orbitron text-2xl glow-neon-red mb-4">Current Favourite Photo</h2>
+               <div className="flex justify-center items-center">
+                 <img 
+                   src={randomImage} 
+                   alt="Random Image" 
+                   className="w-full h-auto max-h-80 rounded-lg object-cover" 
+                 />
+              
+               </div>
+                               <p className="text-gray-400 font-space text-center mt-4">
+                   31/12/2023
+                  </p>
+             </div>
           </div>
 
           

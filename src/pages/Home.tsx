@@ -81,7 +81,7 @@ const Home = () => {
         <div className="mt-16 text-center">
           <div className="inline-block p-4 border border-gray-800 rounded-lg bg-cyber-dark">
             <div className="font-space text-xs text-gray-500 space-y-1">
-              <div>Last Updated: 7/28/2025</div>
+              <div>Last Updated: 8/10/2025</div>
             </div>
           </div>
         </div>
