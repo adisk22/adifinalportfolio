@@ -12,12 +12,14 @@ const About = () => {
   // Array of random images that will change on each refresh
   const randomImages = [
   
-    '/adi02.png'
+    ['/adi02.png', '31/01/2023'],
+    ['/adi05.jpg', '06/10/2022'],
+    ['/adi06.png', '18/07/2025']
 
   ];
 
   // Get a random image from the array
-  const randomImage = randomImages[Math.floor(Math.random() * randomImages.length)];
+  const randomImageIndex = Math.floor(Math.random() * randomImages.length);
 
   return (
     <div className="min-h-screen bg-cyber-black bg-cyber-grid">
@@ -53,17 +55,17 @@ const About = () => {
 
                          {/* Photo */}
              <div className="bg-cyber-dark border-glow-blue rounded-lg p-6">
-               <h2 className="font-orbitron text-2xl glow-neon-red mb-4">Current Favourite Photo</h2>
+               <h2 className="font-orbitron text-2xl glow-neon-red mb-4">Nice Photos</h2>
                <div className="flex justify-center items-center">
                  <img 
-                   src={randomImage} 
+                   src={randomImages[randomImageIndex][0]} 
                    alt="Random Image" 
                    className="w-full h-auto max-h-80 rounded-lg object-cover" 
                  />
               
                </div>
                                <p className="text-gray-400 font-space text-center mt-4">
-                   31/12/2023
+                   {randomImages[randomImageIndex][1]}
                   </p>
              </div>
           </div>
